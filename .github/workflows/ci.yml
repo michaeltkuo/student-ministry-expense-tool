@@ -30,8 +30,7 @@ jobs:
           ADMIN_PASSWORD: changeme
           JWT_SECRET: ci-jwt-secret
         run: |
-          cd backend
-          pytest -q
+          backend/venv/bin/pytest -q backend/tests
 
   frontend-tests:
     name: Frontend (vitest + build)
