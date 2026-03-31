@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+.vscode/
+
+# Python backend
+backend/venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/*.pyc
+backend/*.pyo
+backend/.env
+backend/expense_tool.db
+backend/uploads/
+
+# Node frontend
+frontend/node_modules/
+frontend/dist/
+frontend/playwright-report/
+frontend/test-results/
+

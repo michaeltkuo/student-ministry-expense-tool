@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+    background-color: #f0efee;
+    color: #000000;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .cru-card {
+    @apply bg-white rounded-2xl shadow-sm border border-black/5;
+  }
+
+  .cru-input {
+    @apply w-full border border-black/20 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:border-transparent;
+    --tw-ring-color: #00c0d8;
+  }
+
+  .cru-button-primary {
+    @apply py-3 rounded-lg font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+    background-color: #000000;
+    color: #ffd000;
+  }
+
+  .cru-button-primary:hover {
+    background-color: #1f1f47;
+  }
+
+  .cru-button-secondary {
+    @apply border border-black/25 py-3 rounded-lg font-semibold transition-colors;
+    color: #000000;
+  }
+
+  .cru-button-secondary:hover {
+    background-color: #f0efee;
+  }
+}
