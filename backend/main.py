@@ -12,6 +12,7 @@ from database import SessionLocal, init_db
 from models import Ministry
 
 UPLOAD_DIR = os.getenv("UPLOAD_DIR", "./uploads")
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
 @asynccontextmanager
